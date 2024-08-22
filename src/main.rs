@@ -1,5 +1,6 @@
 use actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder};
 use serde::Deserialize;
+use bollard::Docker;
 
 #[derive(serde::Deserialize)]
 struct RunInfo {
